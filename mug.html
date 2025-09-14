@@ -12,30 +12,27 @@
     <title>Coal Miner Mugs Gamefowl Farm - Mug</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="preload" href="./assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'>
-  <noscript><link href="./assets/css/bootstrap.min.css" rel="stylesheet"></noscript>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
  
     <!-- Custom styles for this template -->
-    
+    <link href="./index.css" rel="stylesheet">
   </head>
 
 <body> <!-- =====================BODY========================= -->
 
 <script>
-if ('serviceWorker' in navigator) {
-// Register a service worker hosted at the root of the
-// site using the default scope.
-navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-  console.log('Service worker registration succeeded:', registration);
-}).catch(function(error) { // The `.catch()` block is a more reliable way to handle errors
-  console.log('Service worker registration failed:', error);
-});
-} else {
-console.log('Service workers are not supported.');
-}
+  if ('serviceWorker' in navigator) {
+  // Register a service worker hosted at the root of the
+  // site using the default scope.
+  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+    console.log('Service worker registration succeeded:', registration);
+  }, /*catch*/ function(error) {
+    console.log('Service worker registration failed:', error);
+  });
+  } else {
+  console.log('Service workers are not supported.');
+  }
 </script>
-
-
    
     <nav class="navbar py-1 navbar-expand-sm navbar-dark bg-dark justify-content-between"> <!-- =====================NAVBAR========================= -->
 		<a href="index.html" class="navbar-brand d-flex align-items-center">
