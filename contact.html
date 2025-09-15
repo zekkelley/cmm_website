@@ -6,7 +6,7 @@
     <meta name="description" content="Coal Miner Mugs Gamefowl Farm">
     <meta name="author" content="Zek Kelley">
     <meta name="referrer" content="no-referrer">
-<meta name="theme-color" content="#343a40"/>
+    <meta name="theme-color" content="#343a40"/>
     <link rel="icon" href="./assets/favicon.ico">
 
     <title>Coal Miner Mugs Gamefowl Farm - Contact</title>
@@ -20,19 +20,6 @@
 
 <body> <!-- =====================BODY========================= -->
 
-<script>
-  if ('serviceWorker' in navigator) {
-  // Register a service worker hosted at the root of the
-  // site using the default scope.
-  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-    console.log('Service worker registration succeeded:', registration);
-  }, /*catch*/ function(error) {
-    console.log('Service worker registration failed:', error);
-  });
-  } else {
-  console.log('Service workers are not supported.');
-  }
-</script>
 
     <nav class="navbar py-1 navbar-expand-sm navbar-dark bg-dark justify-content-between"> <!-- =====================NAVBAR========================= -->
 		<a href="index.html" class="navbar-brand d-flex align-items-center">
@@ -106,7 +93,7 @@
             <picture>
                           <source srcset="./assets/contact/Lisbet-Solis-face.webp" type="image/webp">
                           <source srcset="./assets/contact/Lisbet-Solis-face.jpg" type="image/jpg">
-                          <img class="card-img-top" src="./assets/contact/Lisbet-Solis-face-2.jpg" alt="Lisbet Solis">
+                          <img class="card-img-top" src="./assets/contact/Lisbet-Solis-face.jpg" alt="Lisbet Solis">
             </picture>
 
             <br>
@@ -154,6 +141,19 @@
         
         <p class="mb-1"><a href="#">Back to Top</a></p>
 
-      </footer>    <script src="instantpage-5.2.0.js" type="module" defer></script>
+      </footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  document.addEventListener('DOMContentLoaded', () => {
+    navigator.serviceWorker.register('/service-worker.js', {
+      updateViaCache: 'imports'
+    }).catch(error => {
+      console.error('Service worker registration failed:', error);
+    });
+  });
+}
+</script>
+      <script src="instantpage-5.2.0.js" type="module" defer></script>
 </body>
 </html>

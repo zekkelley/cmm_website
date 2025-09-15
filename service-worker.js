@@ -2,8 +2,6 @@ var CACHE_NAME = "first";
 var CACHED_URLS = [
   '/assets/logo5.png',
   '/assets/logo5.webp',
-  '/assets/DO_Proudly_Hosted_Badge_Grey-1652c782.png',
-  '/assets/DO_Proudly_Hosted_Badge_Grey-1652c782.webp',
   '/assets/favicon.ico',
   '/index-offline.html',
   '/assets/css/bootstrap.min.css',
