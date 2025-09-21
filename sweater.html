@@ -14,8 +14,6 @@
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
  
-    <!-- Custom styles for this template -->
-    <link href="./index.css" rel="stylesheet">
   </head>
 
 <body> <!-- =====================BODY========================= -->
@@ -60,36 +58,72 @@
 			
 		</div>
 
-      <div class="album py-3 bg-dark">
-        <div class="container">
-			<div class="row">
-			
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/sweater/sweater1.webp" type="image/webp">
-                        <source srcset="./assets/sweater/sweater1.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/sweater/sweater1.jpg" alt="Sweater">
-                </picture>
-					                 
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/sweater/sweater2.webp" type="image/webp">
-                        <source srcset="./assets/sweater/sweater2.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/sweater/sweater2.jpg" alt="Sweater">
-                </picture>              
-              </div>
-            </div>
-            
-            
-                   
-          </div>
+<div class="album py-3 bg-dark">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <source 
+              srcset="
+                ./assets/sweater/sweater1-380.avif 380w,
+                ./assets/sweater/sweater1-760.avif 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif">
+            <source 
+              srcset="
+                ./assets/sweater/sweater1-380.webp 380w,
+                ./assets/sweater/sweater1-760.webp 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp">
+            <source 
+              srcset="
+                ./assets/sweater/sweater1-380.jpg 380w,
+                ./assets/sweater/sweater1-760.jpg 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg">
+            <img class="card-img-top" src="./assets/sweater/sweater1-380.jpg" alt="Sweater">
+          </picture>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <source 
+              srcset="
+                ./assets/sweater/sweater2-380.avif 380w,
+                ./assets/sweater/sweater2-760.avif 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif">
+            <source 
+              srcset="
+                ./assets/sweater/sweater2-380.webp 380w,
+                ./assets/sweater/sweater2-760.webp 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp">
+            <source 
+              srcset="
+                ./assets/sweater/sweater2-380.jpg 380w,
+                ./assets/sweater/sweater2-760.jpg 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg">
+            <img class="card-img-top" src="./assets/sweater/sweater2-380.jpg" alt="Sweater">
+          </picture>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
     </main>
 

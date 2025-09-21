@@ -14,8 +14,6 @@
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
  
-    <!-- Custom styles for this template -->
-    <link href="./index.css" rel="stylesheet">
   </head>
 
 <body> <!-- =====================BODY========================= -->
@@ -60,24 +58,53 @@
 			
 		</div>
 
-      <div class="album py-3 bg-dark">
-        <div class="container">
-			<div class="row">
-			
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/hatch/hatch1.webp" type="image/webp">
-                        <source srcset="./assets/hatch/hatch1.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/hatch/hatch1.jpg" alt="Hatch"> 
-                </picture>
-					                 
-              </div>
-            </div>
-                   
-          </div>
+<div class="album py-3 bg-dark">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <!-- AVIF -->
+            <source 
+              srcset="
+                ./assets/hatch/hatch1-380.avif 380w,
+                ./assets/hatch/hatch1-760.avif 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif">
+
+            <!-- WebP -->
+            <source 
+              srcset="
+                ./assets/hatch/hatch1-380.webp 380w,
+                ./assets/hatch/hatch1-760.webp 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp">
+
+            <!-- JPEG fallback -->
+            <source 
+              srcset="
+                ./assets/hatch/hatch1-380.jpg 380w,
+                ./assets/hatch/hatch1-760.jpg 760w
+              " 
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg">
+
+            <img 
+              class="card-img-top" 
+              src="./assets/hatch/hatch1-380.jpg" 
+              alt="Hatch"
+              decoding="async">
+          </picture>
         </div>
       </div>
+
+    </div>
+  </div>
+</div>
+
 
     </main>
 

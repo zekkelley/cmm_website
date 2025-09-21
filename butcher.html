@@ -14,10 +14,6 @@
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
  
-    <!-- Custom styles for this template -->
-    <link href="./index.css" rel="stylesheet">
-  </head>
-
 <body> <!-- =====================BODY========================= -->
 
     <nav class="navbar py-1 navbar-expand-sm navbar-dark bg-dark justify-content-between"> <!-- =====================NAVBAR========================= -->
@@ -52,52 +48,116 @@
         </div>
       </section>
 
-		<div class="container py-2">
-		
-			<p>My Butchers are from chickens that came from Phil Marsh in the 1950s that then in the 1980s had Red Richardson Butchers bred into them.</p>
-			
-		</div>
+<div class="container py-2">
+  <p>My Butchers are from chickens that came from Phil Marsh in the 1950s that then in the 1980s had Red Richardson Butchers bred into them.</p>
+</div>
 
-      <div class="album py-3 bg-dark">
-        <div class="container">
-			<div class="row">
-			
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/butcher/butcher1.webp" type="image/webp">
-                        <source srcset="./assets/butcher/butcher1.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/butcher/butcher1.jpg" alt="Butcher"> 
-                </picture>
-					                 
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/butcher/butcher2.webp" type="image/webp">
-                        <source srcset="./assets/butcher/butcher2.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/butcher/butcher2.jpg" alt="Butcher"> 
-                </picture>                
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <picture>
-                        <source srcset="./assets/butcher/butcher3.webp" type="image/webp">
-                        <source srcset="./assets/butcher/butcher3.jpg" type="image/jpg">
-                        <img class="card-img-top" src="./assets/butcher/butcher3.jpg" alt="Butcher"> 
-                </picture>                
-              </div>
-            </div>
-            
-            
-                   
-          </div>
+<div class="album py-3 bg-dark">
+  <div class="container">
+    <div class="row">
+
+      <!-- Butcher 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <source 
+              srcset="
+                ./assets/butcher/butcher1-380.avif 380w,
+                ./assets/butcher/butcher1-760.avif 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher1-380.webp 380w,
+                ./assets/butcher/butcher1-760.webp 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher1-380.jpg 380w,
+                ./assets/butcher/butcher1-760.jpg 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg"
+            >
+            <img class="card-img-top" src="./assets/butcher/butcher1-380.jpg" alt="Butcher">
+          </picture>
         </div>
       </div>
+
+      <!-- Butcher 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <source 
+              srcset="
+                ./assets/butcher/butcher2-380.avif 380w,
+                ./assets/butcher/butcher2-760.avif 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher2-380.webp 380w,
+                ./assets/butcher/butcher2-760.webp 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher2-380.jpg 380w,
+                ./assets/butcher/butcher2-760.jpg 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg"
+            >
+            <img class="card-img-top" src="./assets/butcher/butcher2-380.jpg" alt="Butcher">
+          </picture>
+        </div>
+      </div>
+
+      <!-- Butcher 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <picture>
+            <source 
+              srcset="
+                ./assets/butcher/butcher3-380.avif 380w,
+                ./assets/butcher/butcher3-760.avif 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/avif"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher3-380.webp 380w,
+                ./assets/butcher/butcher3-760.webp 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/webp"
+            >
+            <source 
+              srcset="
+                ./assets/butcher/butcher3-380.jpg 380w,
+                ./assets/butcher/butcher3-760.jpg 760w
+              "
+              sizes="(max-width: 768px) 100vw, 380px"
+              type="image/jpeg"
+            >
+            <img class="card-img-top" src="./assets/butcher/butcher3-380.jpg" alt="Butcher">
+          </picture>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
     </main>
 

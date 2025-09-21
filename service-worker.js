@@ -5,7 +5,12 @@ var CACHED_URLS = [
   '/assets/favicon.ico',
   '/index-offline.html',
   '/assets/css/bootstrap.min.css',
-  '/index.css'
+  '/assets/mug/mug1-760.avif',
+  '/assets/mug/mug1-760.webp',
+  '/assets/mug/mug1-760.jpg',
+  'assets/contact/Richard-Kelley-face-2-760.avif',
+  'assets/contact/Richard-Kelley-face-2-760.webp',
+  'assets/contact/Richard-Kelley-face-2-760.jpg'
 ];
 self.addEventListener("install", function(event) {
   event.waitUntil(
